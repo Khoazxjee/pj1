@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title> Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="style1.css"> 
+</head>
+<body>
+    <h1>Trang quản lý sản phẩm</h1>
+
+<section id="themsanpham">
+    <h2>
+        Thêm sản phẩm mới
+    </h2>
+    <form action="ngockhoa.php" method="post">
+        <label for="name">Tên sản phẩm</label>
+        <input type="text" id="name" name="name" placeholder="Hãy nhập tên sản phẩm" required><br><br>
+        <label for="price">Nhập giá tiền</label>
+        <input type="number" id="price" name="price" placeholder="Hãy nhập giá tiền" required><br><br>
+        <label for="mota">Mô tả</label>
+        <textarea type="text" id="mota" name="mota" placeholder="Nhập mô tả sản phẩm" rows="4" cols="28" required></textarea> <br><br>
+        <button type="submit">Thêm sản phẩm</button>
+        <button type="reset">Nhập lại thông tin</button>
+    </form>
+</section>
+<section class="danhsach">
+    <h2>
+        Danh sách sản phẩm
+    </h2>
+<table>
+    <thead>
+        <tr>
+            <th>
+                Tên sản phẩm
+            </th>
+            <th>
+                Giá(VND)
+            </th>
+            <th>
+                Mô Tả
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="bodydanhsach">
+        <tr>
+            <td>Áo Thun</td>
+            <td>100,000</td>
+            <td>Áo chất liệu cotton 100%
+            </td>
+            <td class="actions">
+                <button class="sua">Sửa</button>
+                <button class="xoa">Xóa</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Quần Jeans Rách Gối</td>
+            <td>450,000</td>
+            <td>Quần jeans phong cách, form slimfit.</td>
+            <td class="actions">
+                <button class="sua">Sửa</button>
+                <button class="xoa">Xóa</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</section>
+</body>
+</html>
